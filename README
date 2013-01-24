@@ -1,0 +1,24 @@
+Small example pom.xml for using Maven with Scala.
+
+(w) 2013 by Mikio L. Braun and Matthias Jugel
+Public domain.
+
+This is in no way intended to show "how easy" it is. I know that Maven
+is complex and ugly, but it's been around forever, and it's just some
+part of the Java Environment you need to master.
+
+This should hopefully get you started. It sets up a project which compiles
+Java and Scala. It's all based on the scala-maven-plugin, for more
+information, see here: http://scala-tools.org/mvnsites/maven-scala-plugin
+
+Besides the standard use of "mvn package" to get your jar, etc, the
+plugin also allows you to run a class with
+
+> mvn scala:run -DmainClass=...
+
+and to open a console with the project files in the classpath
+
+> mvn scala:console
+
+It seems this forgets to turn console echo on afterwards. Type "reset" to
+reset your console.
