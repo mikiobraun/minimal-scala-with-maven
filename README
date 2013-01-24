@@ -22,3 +22,6 @@ and to open a console with the project files in the classpath
 
 It seems this forgets to turn console echo on afterwards. Type "reset" to
 reset your console.
+
+Doesn't seem to work for Scala 2.10 yet. Let's wait till the changes trickle
+through... ;)
